@@ -23,13 +23,16 @@ router.get('/', async (req, res) => {
             },
         },
     ],
-    });
-  .then(postData =>RES.JSON(postData))
-  .catch (err) {
+     });
+    then(postData =>RES.JSON(postData))
+   .catch (err) 
+    {
     console.log(err);
     res.status(500).json(err);
   }
-});
+    }
+  }
+   );
 
 router.get('/login', (req, res) => {
   // If a session exists, redirect the request to the homepage
