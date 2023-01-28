@@ -3,7 +3,7 @@ const { Post,User,Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 // Prevent non logged in users from viewing the homepage
-router.get('/', async (req, res) => {
+router.get('/', async (req, res) =>{
   try {
     const postData = await Post.findAll({
       attributes: ['id','title','content','created_at'],
@@ -22,17 +22,15 @@ router.get('/', async (req, res) => {
                 attributes: ['username']
             },
         },
-    ],
+    ]
      });
-    then(postData =>RES.JSON(postData))
-   .catch (err) 
-    {
+   .then(postData =>res.json (postData))
+   .catch (err=> {
     console.log(err);
     res.status(500).json(err);
-  }
-    }
-  }
-   );
+  });
+  }}
+  );
 
 router.get('/login', (req, res) => {
   // If a session exists, redirect the request to the homepage
