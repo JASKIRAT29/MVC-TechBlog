@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="fw-bolder">
+        Travel Blog
+      </h1>
+      <nav>
+        <a href="/">Home</a>
+        {{#if loggedIn}}
+        <a href="/dashboard">Dashboard</a>
+        <button id="logout" class="btn-no-style">Logout</button>
+        {{else}}
+        <a href="/login">Login</a>
+        {{/if}}
+      </nav>
+    </header>
+    <main>
+
+      <!-- Page header with logo and tagline-->
+      <header class="bg-light border-bottom mb-4">
+        <div class="container">
+          <div class="text-center my-5">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp" alt="logo" style="width: 185px;">
+            <h1 class="fw-bolder">BeWelcome - Travel The World!</h1>
+            <p class="lead mb-0">Make Unforgettable Memories</p>
+          </div>
+        </div>
+      </header>
+      
+
+      <!-- Blog entries-->
+      <div class="col-lg-12">
+        {{{ body }}}
+      </div>
+
+    </main>
+    <footer>
+      Copyright (c) 2023 | Travel Blog Team
+    </footer>
+  </div>
+
+</body>
+</html>
+
+{{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{/if}}
