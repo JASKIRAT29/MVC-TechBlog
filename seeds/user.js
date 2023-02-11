@@ -8,7 +8,7 @@ const userData = [
   },
   {
     "username": "kirat",
-    "email_id": "kiratt@gmail.com",
+    "email_id": "kirat@gmail.com",
     "password": "kirat65765",
   },
   {
@@ -22,17 +22,17 @@ const userData = [
     "password": "nicole6878",
   },
   {
-    "username": "semir",
-    "email_id": "semir@gmail.com",
-    "password": "semir667878",
+    "username": "Britani",
+    "email_id": "britani@gmail.com",
+    "password": "britani6585",
   },
   {
-    "username": "vimo",
-    "email_id": "vimo@gmail.com",
-    "password": "vimo43535",
+    "username": "Jowan",
+    "email_id": "jowan@gmail.com",
+    "password": "jowan6476",
   },
 ];
 
-const seedUsers = () => User.bulkCreate(userdata);
+const seedUsers = () => User.bulkCreate(userData);
 
 module.exports = seedUsers;
