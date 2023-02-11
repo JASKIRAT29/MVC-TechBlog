@@ -1,7 +1,8 @@
-<ul class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post}}
-  </li>
+<!-- Loop over each object in the posts array -->
+<article class="post">
+
+  {{#each posts as |post| }}
+  {{> post-info post}}
   {{/each}}
-</ul>
+
+</article>
