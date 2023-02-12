@@ -1,5 +1,5 @@
 # MVC-TechBlog
-### Table-of-contents
+### ✅Table-of-contents
 * Description
 * Installation
 * Usage
@@ -69,7 +69,7 @@ npm start
 
 Your repository is licensed under an mit open source license, so other people can contribute more easily.More information can be found by clicking this [link.](https://choosealicense.com/licenses/mit)
 
-### INSTALLATION
+### 👩‍💻TECHNOLOGIES
 
 * Javascript
 * Node.js
@@ -88,3 +88,6 @@ Your repository is licensed under an mit open source license, so other people ca
 * connect-session-sequelize
 * express-handlebars
 express-session
+## DEMO
+![MVC SCREENSHOT](https://user-images.githubusercontent.com/114631240/218286630-afe066a6-b122-4f7e-828f-862d6efc26e3.png)
+
